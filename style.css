@@ -107,27 +107,30 @@ h1, h2, h3, h4, h5, h6 {
 .btn {
 	display: inline-block;
 	vertical-align: top;
+	text-align: center;
 	font-family: 'Raleway', sans-serif;
 	font-size: 13px;
 	color: #fff;
 	font-weight: 600;
 	text-transform: uppercase;
 	text-decoration: none;
-	height: 46px;
-	width: 200px;
-	padding: 17px 0;
+	padding: 15px 50px;
 	border-radius: 2px;
 	border: 0;
 	cursor: pointer;
 	transition: 0.1s linear;
 }
 
-.btn__intro {
+.btn__red {
 	background: #e84545;
 }
 
-.btn__intro:hover {
+.btn__red:hover {
 	background: #dd3434;
+}
+
+.btn__long {
+	min-width: 280px;
 }
 
 .features {
@@ -263,6 +266,10 @@ h1, h2, h3, h4, h5, h6 {
 	display: flex;
 }
 
+.social__footer {
+	justify-content: center;
+}
+
 .social__item {
 	width: 40px;
 	height: 40px;
@@ -283,11 +290,25 @@ h1, h2, h3, h4, h5, h6 {
 	fill: #000;
 }
 
+.social__footer .social__item {
+	background: transparent;
+	border: 2px solid #fff;
+	border-radius: 2px;
+}
+
+.social__footer .social__item:hover {
+	background: #fff;
+}
+
 .social__icon {
 	fill: #c6cacc;
 	display: block;
 	height: 18px;
 	transition: 0.1s linear;
+}
+
+.social__footer .social__icon {
+	fill: #fff;
 }
 
 .reviews {
@@ -335,4 +356,84 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 	font-weight: bold;
 	text-transform: uppercase;
+}
+
+.download {
+	margin: 90px 0;
+	text-align: center;
+}
+
+.download__title {
+	font-size: 28px;
+	font-weight: 300;
+	color: #2d3033;
+	margin-bottom: 15px;
+}
+
+.download__text {
+	font-size: 13px;
+	font-weight: bold;
+	color: #2d3033;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.footer {
+	background: #3a3e64;
+}
+
+.footer__inner {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 70px 0;
+}
+
+.footer__block {
+	width: 33.33333%;
+	text-align: center;
+	padding: 0 15px;
+}
+
+.footer__title {
+	font-size: 14px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+}
+
+.footer__address {
+	color: rgba(255, 255, 255, 0.5);
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+.footer__text {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+.copyright {
+	background: #313454;
+	padding: 25px 0;
+}
+
+.copyright__text {
+	text-align: center;
+	font-size: 14px;
+	color: #808080;
+	line-height: 1.6;
+}
+
+.copyright__text span {
+	color: #fff;
+}
+
+.heart__icon {
+	display: inline-block;
+	height: 14px;
+	width: 15px;
+	fill: #e84545;
 }
